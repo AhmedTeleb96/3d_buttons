@@ -1,0 +1,6 @@
+<resources>
+
+    <style name="Widget.Theme.Buttons3d.MyView" parent="">
+        <item name="android:background">@color/button3d_default_color</item>
+    </style>
+</resources>

@@ -1,0 +1,204 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:button3d="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/basic_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.ahmedteleb.buttons3d.Button3d
+            android:id="@+id/primary_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:minWidth="140dp"
+            android:minHeight="50dp"
+            android:text="Primary Button"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@+id/warning_button"
+            app:layout_constraintEnd_toStartOf="@+id/inverse_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            button3d:buttonColor="@color/button3d_color_turquoise"
+            button3d:shadowEnabled="true" />
+
+        <com.ahmedteleb.buttons3d.Button3d
+            android:id="@+id/warning_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:minWidth="140dp"
+            android:minHeight="50dp"
+            android:text="Warning Button"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@+id/success_button"
+            app:layout_constraintStart_toStartOf="@+id/primary_button"
+            app:layout_constraintTop_toBottomOf="@+id/primary_button"
+            button3d:buttonColor="@color/button3d_color_sun_flower"
+            button3d:shadowEnabled="true" />
+
+        <com.ahmedteleb.buttons3d.Button3d
+            android:id="@+id/success_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:minWidth="140dp"
+            android:minHeight="50dp"
+            android:text="Success Button"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/warning_button"
+            app:layout_constraintTop_toBottomOf="@+id/warning_button"
+            button3d:buttonColor="@color/button3d_color_emerald"
+            button3d:shadowEnabled="true" />
+
+        <com.ahmedteleb.buttons3d.Button3d
+            android:id="@+id/inverse_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:minWidth="140dp"
+            android:minHeight="50dp"
+            android:text="Inverse Button"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@+id/danger_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/primary_button"
+            app:layout_constraintTop_toTopOf="parent"
+            button3d:buttonColor="@color/button3d_color_wet_asphalt"
+            button3d:shadowEnabled="true" />
+
+        <com.ahmedteleb.buttons3d.Button3d
+            android:id="@+id/danger_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:minWidth="140dp"
+            android:minHeight="50dp"
+            android:text="Danger Button"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@+id/disabled_button"
+            app:layout_constraintEnd_toEndOf="@+id/inverse_button"
+            app:layout_constraintTop_toBottomOf="@+id/inverse_button"
+            button3d:buttonColor="@color/fbutton_color_alizarin"
+            button3d:shadowEnabled="true" />
+
+        <com.ahmedteleb.buttons3d.Button3d
+            android:id="@+id/disabled_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:minWidth="140dp"
+            android:minHeight="50dp"
+            android:text="Disabled Button"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/danger_button"
+            app:layout_constraintTop_toBottomOf="@+id/danger_button"
+            button3d:enabled="false" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/basic_button_circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/basic_button">
+
+        <com.ahmedteleb.buttons3d.Button3dCircle
+            android:id="@+id/primary_button_circle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="12dp"
+            android:text="Primary Button"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@+id/warning_button_circle"
+            app:layout_constraintEnd_toStartOf="@+id/inverse_button_circle"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            button3d:buttonColor="@color/button3d_color_turquoise"
+            button3d:shadowEnabled="true" />
+
+
+        <com.ahmedteleb.buttons3d.Button3dCircle
+            android:id="@+id/warning_button_circle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="12dp"
+            android:text="Warning Button"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@+id/success_button_circle"
+            app:layout_constraintStart_toStartOf="@+id/primary_button_circle"
+            app:layout_constraintTop_toBottomOf="@+id/primary_button_circle"
+            button3d:buttonColor="@color/button3d_color_sun_flower"
+            button3d:shadowEnabled="true" />
+
+        <com.ahmedteleb.buttons3d.Button3dCircle
+            android:id="@+id/success_button_circle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="12dp"
+            android:text="Success Button"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/warning_button_circle"
+            app:layout_constraintTop_toBottomOf="@+id/warning_button_circle"
+            button3d:buttonColor="@color/button3d_color_emerald"
+            button3d:shadowEnabled="true" />
+
+        <com.ahmedteleb.buttons3d.Button3dCircle
+            android:id="@+id/inverse_button_circle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="12dp"
+            android:text="Inverse Button"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@+id/danger_button_circle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/primary_button_circle"
+            app:layout_constraintTop_toTopOf="parent"
+            button3d:buttonColor="@color/button3d_color_wet_asphalt"
+            button3d:shadowEnabled="true" />
+
+        <com.ahmedteleb.buttons3d.Button3dCircle
+            android:id="@+id/danger_button_circle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="12dp"
+            android:text="Danger Button"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@+id/disabled_button_circle"
+            app:layout_constraintEnd_toEndOf="@+id/inverse_button_circle"
+            app:layout_constraintTop_toBottomOf="@+id/inverse_button_circle"
+            button3d:buttonColor="@color/fbutton_color_alizarin"
+            button3d:shadowEnabled="true" />
+
+        <com.ahmedteleb.buttons3d.Button3dCircle
+            android:id="@+id/disabled_button_circle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="12dp"
+            android:text="Disabled Button"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/danger_button_circle"
+            app:layout_constraintTop_toBottomOf="@+id/danger_button_circle"
+            button3d:enabled="false" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
