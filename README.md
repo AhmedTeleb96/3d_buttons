@@ -46,6 +46,16 @@ If the default values of custom attribues did not meet your requirement, you can
     button3d:cornerRadius="5dp"
     ...
      />
+# for circle 3d button
+<com.ahmedteleb.buttons3d.Button3dCircle
+    ...
+    button3d:buttonColor="@color/color_concrete"
+    button3d:shadowColor="@color/color_asbestos"
+    button3d:shadowEnabled="true"
+    button3d:shadowHeight="5dp"
+    button3d:cornerRadius="5dp"
+    ...
+     />
 ```
 
 ### via code (sample)
