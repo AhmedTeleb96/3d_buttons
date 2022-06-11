@@ -265,7 +265,7 @@ class Button3d : AppCompatButton, View.OnTouchListener{
         refresh()
     }
 
-    private fun setShadowHeight(shadowHeight: Int) {
+    fun setShadowHeight(shadowHeight: Int) {
         this.mShadowHeight = shadowHeight
         refresh()
     }
